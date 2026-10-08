@@ -1,0 +1,86 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:#f5f7fb;color:#172033}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer;border:0}
+button:disabled{opacity:.65;cursor:wait}
+.app{display:flex;min-height:100vh}
+aside{width:245px;background:#101828;color:#fff;padding:24px 16px;display:flex;flex-direction:column;flex-shrink:0}
+.brand{display:flex;align-items:center;gap:10px;margin:0 8px 36px}
+.brand>span{width:40px;height:40px;border-radius:11px;background:#4f46e5;display:grid;place-items:center;font-weight:800}
+.brand b{display:block;font-size:17px}
+.brand small{display:block;color:#98a2b3;font-size:11px;margin-top:2px}
+nav{display:grid;gap:7px}
+nav button{background:transparent;color:#aeb8c8;text-align:left;padding:12px 13px;border-radius:9px;display:flex;align-items:center;gap:12px;font-weight:600}
+nav button:hover,nav .active{background:#1d2939;color:#fff}
+nav i{font-style:normal;width:20px;text-align:center;font-size:18px}
+.side-bottom{margin-top:auto;border-top:1px solid #253247;padding:18px 8px;display:grid;gap:4px}
+.side-bottom small{color:#7e8b9e}
+.side-bottom span{color:#aeb8c8;font-size:12px}
+.side-bottom button{margin-top:12px;background:#182334;color:#d9e1ec;padding:10px;border-radius:8px;text-align:left}
+main{flex:1;min-width:0}
+header{height:78px;background:#fff;border-bottom:1px solid #e5e7eb;display:flex;justify-content:space-between;align-items:center;padding:0 34px}
+header h2{margin:0;font-size:22px}
+header span{font-size:12px;color:#98a2b3}
+.avatar{width:38px;height:38px;background:#e0e7ff;color:#3730a3;border-radius:50%;display:grid;place-items:center;font-weight:800}
+.content{padding:32px;max-width:1400px;margin:auto}
+.welcome{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}
+.welcome h1{margin:0 0 4px;font-size:28px}
+.welcome p,.panel-head p{color:#667085;margin:0}
+.date{background:#fff;border:1px solid #e5e7eb;padding:10px 14px;border-radius:9px;color:#667085;font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:22px}
+.cards.employee-cards{grid-template-columns:repeat(2,minmax(180px,1fr))}
+.card,.panel{background:#fff;border:1px solid #e6eaf0;border-radius:14px;box-shadow:0 2px 8px rgba(16,24,40,.03)}
+.card{padding:20px}
+.card span{display:block;color:#667085;font-size:13px;font-weight:600}
+.card strong{display:block;font-size:30px;margin:12px 0 3px}
+.card small{color:#98a2b3}
+.panel{padding:24px}
+.panel-head{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px}
+.panel-head h3{margin:0 0 4px;font-size:18px}
+.primary,.login-card form>button{background:#4f46e5;color:#fff;padding:10px 15px;border-radius:8px;font-weight:700}
+.primary:hover,.login-card form>button:hover{background:#4338ca}
+.ops{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ops button{background:#f8fafc;border:1px solid #e7ebf1;border-radius:11px;padding:17px;text-align:left;display:grid;gap:5px}
+.ops button:hover{border-color:#a5b4fc}
+.ops b{font-size:22px;color:#4f46e5}
+.ops span{font-weight:700}
+.ops small{color:#667085}
+.table-wrap{overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:13px;border-bottom:1px solid #edf0f4;white-space:nowrap}
+th{color:#667085;background:#fafbfc;text-transform:capitalize}
+.row-actions{display:flex;gap:7px}
+.small-button{background:#eef2ff;color:#3730a3;padding:6px 9px;border-radius:6px;font-size:12px;font-weight:700}
+.small-button:hover{background:#e0e7ff}
+.danger-button{background:#fef3f2;color:#b42318}
+.danger-button:hover{background:#fee4e2}
+.empty{padding:40px;text-align:center;color:#667085;background:#fafbfc;border-radius:10px}
+.loading{color:#667085}
+.login{min-height:100vh;display:grid;place-items:center;background:linear-gradient(135deg,#eef2ff,#f8fafc);padding:20px}
+.login-card{width:min(430px,92vw);background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:34px;box-shadow:0 20px 60px rgba(16,24,40,.1)}
+.login-card .brand{margin:0 0 28px}
+.login-card h1{margin:0 0 5px;font-size:27px}
+.login-card>p{color:#667085;margin:0 0 25px}
+.login-card form,.record-form{display:grid;gap:16px}
+.login-card label,.record-form label{display:grid;gap:7px;font-size:13px;font-weight:700}
+.login-card input,.login-card select,.record-form input,.record-form select,.record-form textarea{width:100%;border:1px solid #d0d5dd;border-radius:8px;padding:11px 12px;outline:none;background:#fff;color:#172033}
+.record-form textarea{resize:vertical}
+.login-card input:focus,.login-card select:focus,.record-form input:focus,.record-form select:focus,.record-form textarea:focus{border-color:#6366f1;box-shadow:0 0 0 3px #e0e7ff}
+.login-card form>button{margin-top:2px}
+.error,.notice{color:#b42318;background:#fef3f2;border-radius:7px;padding:10px;font-size:13px}
+.notice{color:#027a48;background:#ecfdf3}
+.page-error{margin-bottom:16px}
+.text-button{display:block;background:none;color:#4338ca;font-size:13px;font-weight:700;margin:18px auto 0;padding:5px}
+.text-button:hover{text-decoration:underline}
+.hint{margin-top:16px;color:#98a2b3;font-size:11px;text-align:center}
+.modal-backdrop{position:fixed;inset:0;background:rgba(16,24,40,.48);display:grid;place-items:center;padding:20px;z-index:5}
+.dialog{width:min(560px,100%);max-height:90vh;overflow:auto;background:white;border-radius:14px;padding:24px;box-shadow:0 24px 64px rgba(16,24,40,.25)}
+.dialog-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.dialog-head h3{margin:0;font-size:19px}
+.icon-button{background:transparent;color:#667085;font-size:25px;line-height:1;padding:0 4px}
+.dialog-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:5px}
+.secondary{background:#f2f4f7;color:#344054;padding:10px 15px;border-radius:8px;font-weight:700}
+.review-summary{color:#475467;line-height:1.7;background:#f9fafb;border-radius:8px;padding:12px}
+@media(max-width:1100px){.cards{grid-template-columns:repeat(3,1fr)}.ops{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){aside{width:210px}.content{padding:22px}.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){aside{display:none}.content{padding:16px}.cards,.cards.employee-cards{grid-template-columns:1fr 1fr}.welcome{display:block}.date{margin-top:15px;display:inline-block}.panel{padding:17px}.panel-head{align-items:flex-start}.panel-head .primary{white-space:nowrap}.login-card{padding:26px}}
